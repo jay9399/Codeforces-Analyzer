@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1/dist/chartjs-adapter-moment.min.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='graph.html?handle=${user.handle}'">View Problem Graph</button>
+        <button onclick="location.href='verdict.html?handle=${user.handle}'">View Verdict Chart</button>
+        <button onclick="location.href='tag.html?handle=${user.handle}'">View Tag Graph</button>
+        <button onclick="location.href='compare.html?handle=${user.handle}'">Compare Profile</button>
+    </div>
+    <div class="container-profile">
+        <div class="profile-header">
+            <h1>Codeforces User Profile</h1>
+        </div>
+        <div id="userProfile" class="profile-container"></div>
+        <div id="ratingChartContainer">
+            <canvas id="originalRatingChart"></canvas>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

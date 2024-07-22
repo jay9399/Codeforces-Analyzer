@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Analyser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar">
+    <button class="active">Home</button>
+    <button onclick="location.href='profile.html'">Profile</button>
+    <button onclick="location.href='compare.html'">Compare</button>
+    <button onclick="location.href='graph.html'">Graph</button>
+    <button onclick="location.href='tag.html'">Tags</button>
+    <button onclick="location.href='verdict.html'">Verdicts</button>
+  </div>
+
+  <div class="container-index">
+    <div class="intro">
+      <h1>Welcome to Performance Analyser!</h1>
+      <p>Unlock the full potential of your Codeforces journey with our comprehensive performance analysis tools. Easily visualize and track your progress, analyze problem tags, and gain insights into your submission verdicts.</p>
+    </div>
+
+    <div class="input-section">
+      <h3>Get Started</h3>
+      <p>Enter your Codeforces handle below and click "Get Profile" to start exploring your performance metrics.</p>
+      <input type="text" id="handleInput" placeholder="Enter Codeforces handle">
+      <button onclick="navigateToProfile()">Get Profile</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Developed by <strong>Jay </strong>. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

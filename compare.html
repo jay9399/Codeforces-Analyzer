@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>compare profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@0.1.1/dist/chartjs-adapter-moment.min.js"></script>
+</head>
+<body>
+  <div class="container-compare">
+    <h1>Compare Codeforces Profile</h1>
+    <div class="compare-items"><input type="text" id="handle1" placeholder="enter codeforces handle 1 ">  <input type="text" id="handle2" placeholder="enter codeforces handle 2"> <button onclick="compareProfiles()">Compare</button></div>
+    <div id="compare-profile" class="compare-container"></div>
+    <div id="compare-rating">
+        <canvas id="compare-profile-rating"></canvas>
+    </div>
+</div>
+
+<script src="compare.js"></script>
+</body>
+</html>

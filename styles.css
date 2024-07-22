@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #007bff;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar button {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#navbar button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#navbar button.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Container Styles */
+.container-index,
+.container-profile,
+.container-graph,
+.container-tag,
+.container-verdict,
+.container-compare {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.container-index {
+  text-align: center;
+}
+
+.container-profile {
+  background: linear-gradient(to right, #e0e0e0, #ffffff);
+}
+
+.container-graph,
+.container-tag,
+.container-verdict,
+.container-compare {
+  background-color: #f8f9fa;
+}
+
+/* Charts */
+#results-graph,
+#results-tag,
+#verdictChartContainer,
+#compare-rating {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+#originalRatingChart {
+  width: 100%;
+  height: 100%;
+}
+
+/* Profile */
+.profile-avatar {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #007bff;
+}
+
+.profile-container {
+  text-align: left;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-item {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Input and Button Styles */
+input {
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  width: 260px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
